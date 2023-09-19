@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #AEE2FF;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    background-color: #97DEFF;
+    height: 65px;
+}
+
+header h1 {
+    float: left;
+    color: #3E54AC;
+    font-size: 40px;
+    line-height: 65px;
+    padding: 0 30px;
+}
+
+.fa-bars {
+    visibility: hidden;
+}
+
+.menu {
+    float: right;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.menu a {
+    padding: 20px;
+    line-height: 65px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3E54AC;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    background-color: #85CDFD;
+}
+
+.active {
+    background-color: #85CDFD;
+}
+
+/* home dan dashboard */
+.body {
+    text-align: center;
+    margin-top: 140px;
+    padding: 0 50px;
+}
+
+.body h1 {
+    font-size: 48px;
+    font-style: italic;
+    color: #00337C;
+}
+
+.body p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #002E94;
+}
+
+.body a {
+    text-decoration: none;
+    padding: 10px 50px;
+    border: 2px solid #2146C7;
+    border-radius: 5px;
+    background-color: #5B8FB9;
+    box-shadow: 0 7px #009EFF;
+    opacity: 0.8;
+    font-size: 20px;
+    color: #EAFDFC;
+}
+
+.body a:hover {
+    opacity: 1;
+}
+
+.body a:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+/* bot */
+.chatbox {
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 5px solid #1C82AD;
+    background-color: #AEE2FF;
+    width: 40%;
+}
+
+.chatbox h1 {
+    text-align: center;
+    border-bottom: 5px solid #0081B4;
+    padding: 15px;
+    background-color: #B9F3FC;
+    color: #0A2647;
+}
+
+.kolomchat {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.chat {
+    margin: 12px 10px;
+    padding: 12px;
+    word-wrap: break-word;
+}
+
+.message {
+    background-color: #86E5FF;
+    border-radius: 10px 10px 10px 0;
+    margin-right: 10vh;
+    border: 1px solid;
+}
+
+.pesan {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #91D8E4;
+    border-top: 3px solid #0008C1;
+}
+
+.user {
+    background-color: #CDFCF6;
+    border-radius: 10px 10px 0 10px;
+    text-align: right;
+    margin-left: 30vh;
+    border: 1px solid;
+}
+
+button { /* mengatur ukuran button */
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.6;
+    transition: 0.25s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button a {
+    color: black;
+}
+
+.tombol {
+    text-align: center;
+}
+
+.yes {
+    background-color: #6EBF8B;
+}
+
+.no {
+    background-color: #BB6464;
+}
+
+#ulang {
+    background-color: #47B5FF;
+}
+
+#logout {
+    background-color: #FF6969;
+}
+
+#logout a {
+    text-decoration: none;
+}
+
+/* about */
+.about h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0 25px 0;
+    color: #00337C;
+    text-decoration: underline;
+}
+
+.about h3 {
+    border: 3px dashed #0A2647;
+    border-radius: 10px;
+    background-color: #85CDFD;
+    color: #13005A;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 50%;
+    box-shadow: 10px 10px 10px rgba(145, 0, 0, 0.5);
+    padding: 20px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+
+.about h2 {
+    box-shadow: -10px 10px 10px rgba(145, 0, 0, 0.5);
+    text-align: center;
+    border: 5px dotted #0A2647;
+    border-radius: 10px;
+    background-color: #82C3EC;
+    width: 50%;
+    margin: 50px auto;
+    font-size: 30px;
+    padding: 10px;
+    color: #13005A;
+}
+
+/* contact */
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact h1 {
+    font-size: 40px;
+    color: #00337C;
+}
+
+.kontak {
+    text-align: center;
+    border: 5px solid #2146C7;
+    border-radius: 10px;
+    background-color: #B9F3FC;
+    width: 50%;
+    margin: 30px auto;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.kontak h2 {
+    color: #002E94;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.kontak p {
+    font-size: 24px;
+    font-style: italic;
+    font-family: serif;
+}
+
+.kontak a {
+    text-decoration: none;
+}
+
+.kontak a:hover{
+    text-decoration: underline;
+}
+
+/* login */
+.masuk {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 3px solid #00337C;
+    width: 50%;
+    background-color: #85CDFD;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.masuk h1 {
+    font-size: 48px;
+    line-height: 1;
+    font-style: italic;
+    color: #00337C;
+    margin-bottom: 10px;
+}
+
+.masuk label {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.masuk input, select {
+    padding: 5px 10px;
+    width: 300px;
+    flex-wrap: wrap;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.masuk a {
+    text-decoration: none;
+    color: black;
+}
+
+.masuk a:hover {
+    text-decoration: underline;
+}
+
+.masuk button {
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+#login {
+    background-color: #61876E;
+}
+
+#login:hover {
+    background-color: #68B984;
+}
+
+#reset {
+    background-color: #EB455F;
+}
+
+#reset:hover {
+    background-color: #FF0032;
+}
+
+.admin {
+    background-color: #79E0EE;
+}
+
+/* register */
+.registerUser {
+    background-color: #64CCC5;
+}
+
+.registerAdmin {
+    background-color: #ADE4DB;
+}
+
+#register {
+    background-color: #A75D5D;
+}
+
+#register:hover {
+    background-color: #FF7B54;
+}
+
+
+/* tabel kondisi, gejala, hubungan */
+#judul {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 48px;
+    color: #144272;
+    text-align: center;
+}
+
+#teks {
+    text-align: center;
+    font-size: 20px;
+}
+
+#add {
+    background-color : #C3F8FF;
+    border: none;
+    padding: 10px;
+    text-decoration : none;
+    font-weight : bold;
+    color : black;
+    margin : 0 10px;
+    border : 2px solid;
+    border-radius : 25px;
+    padding : 5px;
+    transition: 0.25s;
+}
+
+#add:hover {
+    background-color : #C9F4AA;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.isi {
+    background-color: #C0EEF2;
+    font-size: 18px;
+    text-align: center;
+}
+
+#edit, #delete {
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    transition: 0.25s;
+    color: black;
+    margin: 10px auto;
+}
+
+#edit { /* edit di tabel dan edit data */
+    background-color: #A5F1E9;
+} 
+
+#edit:hover {
+    background-color: #21E1E1;
+}
+
+#delete {
+    background-color: #FF8B8B;
+}
+
+#delete:hover {
+    background-color: #FFDEDE;
+}
+
+/* tambah dan edit kondisi, gejala, hubungan */
+label {
+    font-weight : bold;
+    font-style : italic;
+}
+
+.deskripsi, .rekomendasi {
+    margin-top: 10px;
+}
+
+#deskripsi, #rekomendasi {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    max-width: 100%;
+    padding: 10px;
+}
+
+#submit {
+    background-color: #FE6244;
+    margin: 10px 0;
+}
+
+#kembali { /* semua button kembali */
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #57C5B6;
+    color: black;
+    opacity: 0.8;
+}
+
+#kembali:hover {
+    opacity: 1;
+}
+
+/* detailriwayat */
+.riwayat {
+    margin: auto;
+    width: 90%;
+}
+
+#info {
+    border: 3px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #64CCC5;
+}
